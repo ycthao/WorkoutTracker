@@ -15,3 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("pulic"));
+
+app.listen(PORT, () => {
+  console.log(`App is running on port ${PORT}`);
+});
