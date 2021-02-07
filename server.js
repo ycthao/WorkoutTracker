@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("pulic"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/deep-thoughts", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
