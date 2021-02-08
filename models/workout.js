@@ -1,4 +1,4 @@
-const mongoose = require("mongodb");
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const workout = new Schema({
@@ -38,6 +38,6 @@ const workout = new Schema({
   ],
 });
 
-const Workout = mongoose.model("Workout", WorkoutSchema);
+const Workout = mongoose.model("Workout", workout);
 
 module.exports = Workout;
