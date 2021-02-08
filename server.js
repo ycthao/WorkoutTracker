@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
   useFindAndModify: false,
 });
 
-//require("./router/apiroutes.js")(app);
+require("./router/apiroutes.js")(app);
 require("./router/htmlroutes.js")(app);
 
 app.listen(PORT, () => {
