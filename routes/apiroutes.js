@@ -27,7 +27,15 @@ module.exports = (app) => {
   });
 
   // update call -- updating workout
-  app.put("/api/workouts/:id", (req, res) => {});
+  app.put("/api/workouts/:id", (req, res) => {
+    db.Workout.findByIdAndUpdate(req.params.id, { $push: { exercises: req.body } }, { new: true })
+      .then((newWorkout) => {
+        res.json(newWorkout);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
 
   // get workout range
   app.get("/api/workouts/range", (req, res) => {
