@@ -27,7 +27,7 @@ The purpose of this app is to create and track daily workouts. The app will be a
 
 ## Usage
 
-![image](https://github.com/ycthao/TeamInfoGenerator/blob/main/Images/teamgenerator.gif?raw=true)
+![image](https://user-images.githubusercontent.com/71569747/110520387-03329200-80d4-11eb-86b0-b6cb413a35ba.gif)
 
 ## Contributing
 
